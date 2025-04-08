@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/swiper-bundle.min.css">
     <link rel="stylesheet" href="./preloader/preloader.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/blocks/card.css">
 </head>
 <body>
       <!-- Блок прелоадера -->
@@ -75,7 +76,43 @@
     <div class="content-title">
         Everything you want to know in one place.
     </div>
-    <img src="./img/Frame 427320307.png" alt="Profile" class="first_img">
+    <!--Карточки-->
+    <div class="container">
+        <div class="background-image">
+            <img src="./img/Bitmap.png"></div>
+        <div class="profile-content">
+          <div class="profile-header">
+            <img id="profile-image" src="" alt="Profile Picture">
+            <div>
+              <h1 id="profile-name"></h1>
+              <p id="profile-title"></p>
+              <p id="profile-location"></p>
+            </div>
+          </div>
+          <div class="about-me">
+            <h2>About Me</h2>
+            <p id="about-me-text"></p>
+          </div>
+          <div class="portfolio">
+            <div class="portfolio-item">
+              <img src="https://d41chssnpqdne.cloudfront.net/user_upload_by_module/chat_bot/files/7031152/z79sRBcq9XM15n0r.png" alt="Portfolio Item 1">
+            </div>
+            <div class="portfolio-item">
+              <img src="https://d41chssnpqdne.cloudfront.net/user_upload_by_module/chat_bot/files/7031152/z79sRBcq9XM15n0r.png" alt="Portfolio Item 2">
+            </div>
+            <div class="portfolio-item">
+              <img src="https://d41chssnpqdne.cloudfront.net/user_upload_by_module/chat_bot/files/7031152/z79sRBcq9XM15n0r.png" alt="Portfolio Item 3">
+            </div>
+          </div>
+          <div class="work-experience">
+            <h2>Work Experience</h2>
+            <p id="work-experience-text"></p>
+          </div>
+        </div>
+      </div>
+      
+   
+    <!--Карточки-конец-->
     <section class="features">
         <div class="feature">
           <h4>Professional Profile</h4>
@@ -150,7 +187,6 @@
             </form>
         </div>
     </div>
-    <script src="scripts/modal.js"></script>
     <script>
         'use strict';
         document.addEventListener('DOMContentLoaded', () => {
@@ -160,8 +196,10 @@
             }, 900);
         });
     </script>
+       <script src="./scripts/scripts.card.js"></script>
     <script src="scripts/swiper-bundle.min.js"></script>
     <script src="scripts/scripts.js"></script>
+    <script src="scripts/modal.js"></script>
     
 </body>
 </html>
