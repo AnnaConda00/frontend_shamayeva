@@ -37,7 +37,7 @@
 
 .overlay {
     position: absolute;
-    top: -70px; 
+    top: -70px; /*нужно доработать */
 
     left: 10%;
     right: 10%;
